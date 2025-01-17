@@ -76,6 +76,15 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.category-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.15) !important;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .hero {
@@ -102,5 +111,9 @@
 
   .card {
     margin: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 0.9rem;
   }
 }
