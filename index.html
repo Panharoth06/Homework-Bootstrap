@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Shop for cutting-edge EchoSound Elite headphones with immersive sound and elegant design. Explore our collection now!"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./img/Black Simple Music Studio Logo.png"
+      type="image/x-icon"
+    />
+    <!-- <link rel="stylesheet" href="index.css" />  -->
+    <title>Home</title>
+    <style>
+      .carousel-image {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 768px) {
+        .navbar-nav {
+          padding: 1rem 0;
+        }
+        .auth-buttons {
+          padding: 1rem 0;
+          display: flex;
+          justify-content: center;
+          gap: 0.5rem;
+        }
+        h1.display-4 {
+          font-size: 2.5rem;
+        }
+        h2.display-5 {
+          font-size: 2rem;
+        }
+        .lead {
+          font-size: 1rem;
+        }
+        .hero-buttons {
+          flex-direction: column;
+          gap: 1rem;
+        }
+        .hero-buttons .btn {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .feature-card {
+          margin: 0.5rem 1rem;
+        }
+        .review-card {
+          margin: 0.5rem 1rem;
+          height: auto !important;
+        }
+      }
+
+      /* Add padding to account for fixed navbar */
+      body {
+        padding-top: 80px;
+      }
+
+      /* Ensure images scale properly */
+      .img-fluid {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Feature cards hover effect */
+      .feature-card {
+        transition: transform 0.3s ease;
+      }
+
+      .feature-card:hover {
+        transform: translateY(-5px);
+      }
+
+      /* Review cards consistent height */
+      .review-card {
+        height: 100%;
+        transition: transform 0.3s ease;
+      }
+
+      .review-card:hover {
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- nav section -->
+      <nav class="navbar navbar-expand-md bg-white fixed-top border-bottom">
+        <div class="container">
+          <a href="/" class="navbar-brand">
+            <img
+              src="./img/Black Simple Music Studio Logo.png"
+              alt="logo"
+              width="80"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a href="#" class="nav-link active" id="home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="headphones.html" class="nav-link">Headphones</a>
+              </li>
+              <li class="nav-item">
+                <a href="speakers.html" class="nav-link">Speakers</a>
+              </li>
+              <li class="nav-item">
+                <a href="accessories.html" class="nav-link">Accessories</a>
+              </li>
+            </ul>
+            <div class="auth-buttons">
+              <button type="button" class="btn btn-outline-dark me-2">
+                Login
+              </button>
+              <button type="button" class="btn btn-dark">Sign-up</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- hero section -->
+      <section class="container px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-12 col-sm-10 col-lg-6 mx-auto">
+            <img
+              src="./img/hero-section-headphones.jpg"
+              class="d-block img-fluid rounded"
+              alt="EchoSound Elite"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-4 fw-bold text-body-emphasis lh-1 mb-3">
+              Experience the EchoSound Elite
+            </h1>
+            <p class="lead">
+              Dive into immersive sound with cutting-edge technology and elegant
+              design.
+            </p>
+            <div
+              class="d-grid gap-2 d-md-flex justify-content-md-start hero-buttons"
+            >
+              <button type="button" class="btn btn-dark btn-lg px-4 me-md-2">
+                Shop Now
+              </button>
+              <button type="button" class="btn btn-outline-dark btn-lg px-4">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- best sellers section -->
+      <section class="container px-4 py-5">
+        <h2 class="display-5 text-center fw-bold text-body-emphasis lh-1 mb-5">
+          Our Best Sellers
+        </h2>
+        <div
+          id="carouselExampleRide"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="3000"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./img/candyskull.webp"
+                class="d-block carousel-image"
+                alt="candy skull"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/CrusherANC2_BestBuyBlackTan_S6CAW-S978_Hero_v001.webp"
+                class="d-block carousel-image"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/ACCENTUM_Wireless_ATF_Main_Image.jpg"
+                class="d-block carousel-image"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleRide"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleRide"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- why choose us section -->
+      <section class="container py-5">
+        <h2 class="display-5 fw-bold mb-4 text-center">Why Choose Us?</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <div class="feature-card h-100 p-4 border rounded">
+              <i class="bi bi-soundwave fs-1 text-primary"></i>
+              <h5 class="mt-3">Immersive Sound & Comfort</h5>
+              <p>
+                Experience rich, crystal-clear audio with deep bass, thanks to
+                top-tier audio technology. Perfect for music, movies, and calls.
+              </p>
+              <p>
+                Designed for comfort, the lightweight frame and cushioned ear
+                cups ensure a secure, fatigue-free fit during long listening
+                sessions.
+              </p>
+              <p>
+                Enjoy enhanced noise isolation, making these headphones perfect
+                for both focus and relaxation, whether at home or on the go.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="feature-card h-100 p-4 border rounded">
+              <i class="bi bi-tags fs-1 text-success"></i>
+              <h5 class="mt-3">Affordable Prices</h5>
+              <p>
+                Enjoy premium sound and comfort without the premium price tag.
+                High-quality headphones that fit your budget.
+              </p>
+              <p>
+                Get exceptional value for money, combining top-tier features
+                with an affordable price to make great audio accessible to
+                everyone.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="feature-card h-100 p-4 border rounded">
+              <i class="bi bi-truck fs-1 text-warning"></i>
+              <h5 class="mt-3">Fast Shipping</h5>
+              <p>
+                Get your order delivered quickly and reliably with our efficient
+                shipping service, so you can enjoy your new headphones sooner.
+              </p>
+              <p>
+                We prioritize fast processing and secure delivery, ensuring that
+                your products arrive in perfect condition and on time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- rating section -->
+      <section class="container py-5">
+        <h2 class="display-5 fw-bold mb-4 text-center">
+          Customer Ratings & Reviews
+        </h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <div class="review-card p-4 border rounded">
+              <div class="d-flex align-items-center mb-3">
+                <div class="stars">
+                  <span class="bi bi-star-fill text-warning"></span>
+                  <span class="bi bi-star-fill text-warning"></span>
+                  <span class="bi bi-star-fill text-warning"></span>
+                  <span class="bi bi-star-fill text-warning"></span>
+                  <span class="bi bi-star-half text-warning"></span>
+                </div>
+                <p class="ms-3 mb-0">4.5/5</p>
+              </div>
+              <p><strong>John Doe</strong></p>
+              <p>
+                "These headphones are amazing! The sound quality is top-notch,
+                and they're so comfortable to wear for long hours. Highly
+                recommended!"
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="review-card p-4 border rounded">
+              <div class="d-flex align-items-center mb-3">
+                <div class="stars">
+                  <span class="bi bi-star-fill text-warning"></span>
+                  <span class="bi bi-star-fill text-warning"></span>
+                  <span class="bi bi-star-fill text-warning"></span>
+                  <span class="bi bi-star-fill text-warning"></span>
+                  <span class="bi bi-star-fill text-warning"></span>
+                </div>
+                <p class="ms-3 mb-0">5/5</p>
+              </div>
+              <p><strong>Jane Smith</strong></p>
+              <p>
+                "I'm absolutely in love with these headphones. The price is
+                unbeatable for the quality you get. The shipping was fast, too!"
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="review-card p-4 border rounded">
+              <div class="d-flex align-items-center mb-3">
+                <div class="stars">
+                  <span class="bi bi-star-fill text-warning"></span>
+                  <span class="bi bi-star-fill text-warning"></span>
+                  <span class="bi bi-star-fill text-warning"></span>
+                  <span class="bi bi-star-fill text-warning"></span>
+                  <span class="bi bi-star-half text-warning"></span>
+                </div>
+                <p class="ms-3 mb-0">4.5/5</p>
+              </div>
+              <p><strong>David Brown</strong></p>
+              <p>
+                "Great value for money! The sound is rich, and the fit is very
+                comfortable. Perfect for everyday use."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-center text-white py-3 mt-5">
+      <p class="mb-0">© 2025 Audiophile. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
