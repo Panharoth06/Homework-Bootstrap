@@ -14,7 +14,7 @@ body {
   position: relative;
   background: url("./img/ACCENTUM_Wireless_ATF_Main_Image.jpg") no-repeat center
     center;
-  height: 600px;
+  height: 100vh;
   background-size: cover;
 }
 

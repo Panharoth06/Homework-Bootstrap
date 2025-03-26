@@ -75,7 +75,7 @@
     <style>
       /* Add padding for fixed navbar */
       body {
-        padding-top: 80px;
+        padding-top: 25px;
       }
 
       /* Category Image Wrapper Styles */
@@ -130,7 +130,7 @@
   <body>
     <header>
       <!-- nav section -->
-      <nav class="navbar navbar-expand-md bg-white fixed-top border-bottom">
+      <nav class="navbar navbar-expand-md fixed-top border-bottom" style=" backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);">
         <div class="container">
           <a href="/" class="navbar-brand">
             <img
@@ -165,10 +165,8 @@
               </li>
             </ul>
             <div class="auth-buttons">
-              <button type="button" class="btn btn-outline-dark me-2">
-                Login
-              </button>
-              <button type="button" class="btn btn-dark">Sign-up</button>
+              <a href="login.html" class="btn btn-outline-dark me-2">Login</a>
+              <a href="signup.html" class="btn btn-dark">Sign-up</a>
             </div>
           </div>
         </div>
@@ -176,16 +174,16 @@
     </header>
 
     <!-- Main Section -->
-    <main class="container mt-3">
+    <main class="container">
       <!-- Hero Section -->
-      <section class="hero bg-dark text-white text-center pt-5">
+      <section class="hero bg-dark text-white text-center" data-aos="fade-down" data-aos-duration="1000">
         <div class="container px-4">
-          <h1 class="display-4 fw-bold">Experience Sound Like Never Before</h1>
-          <p class="lead mb-4">
+          <h1 class="display-4 fw-bold" data-aos="fade-up" data-aos-delay="200">Experience Sound Like Never Before</h1>
+          <p class="lead mb-4" data-aos="fade-up" data-aos-delay="400">
             Discover the ultimate sound quality with our premium headphones.
             Perfect for music lovers, gamers, and audio enthusiasts.
           </p>
-          <a href="#features" class="btn btn-light btn-lg px-4 py-2">
+          <a href="#features" class="btn btn-light btn-lg px-4 py-2" data-aos="zoom-in" data-aos-delay="600">
             Explore Features
           </a>
         </div>
@@ -193,12 +191,12 @@
 
       <!-- Product Cards Section -->
       <section class="container py-5">
-        <h2 class="text-center fw-bold mb-5">
+        <h2 class="text-center fw-bold mb-5" data-aos="fade-up">
           Explore Headphones from Top Brands
         </h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
           <!-- Card Template -->
-          <div class="col">
+          <div class="col" data-aos="fade-up" data-aos-delay="100">
             <div class="card h-100 shadow-lg border-0 rounded-4">
               <div
                 class="product-img-container position-relative overflow-hidden"
@@ -227,7 +225,7 @@
             </div>
           </div>
           <!-- Card 2 -->
-          <div class="col">
+          <div class="col" data-aos="fade-up" data-aos-delay="200">
             <div class="card h-100 shadow-lg border-0 rounded-4">
               <div
                 class="product-img-container position-relative overflow-hidden"
@@ -256,7 +254,7 @@
             </div>
           </div>
           <!-- Card 3 -->
-          <div class="col">
+          <div class="col" data-aos="fade-up" data-aos-delay="300">
             <div class="card h-100 shadow-lg border-0 rounded-4">
               <div
                 class="product-img-container position-relative overflow-hidden"
@@ -285,7 +283,7 @@
             </div>
           </div>
           <!-- Card 4 -->
-          <div class="col">
+          <div class="col" data-aos="fade-up" data-aos-delay="100">
             <div class="card h-100 shadow-lg border-0 rounded-4">
               <div
                 class="product-img-container position-relative overflow-hidden"
@@ -314,7 +312,7 @@
             </div>
           </div>
           <!-- Card 5 -->
-          <div class="col">
+          <div class="col" data-aos="fade-up" data-aos-delay="200">
             <div class="card h-100 shadow-lg border-0 rounded-4">
               <div
                 class="product-img-container position-relative overflow-hidden"
@@ -343,7 +341,7 @@
             </div>
           </div>
           <!-- Card 6 -->
-          <div class="col">
+          <div class="col" data-aos="fade-up" data-aos-delay="300">
             <div class="card h-100 shadow-lg border-0 rounded-4">
               <div
                 class="product-img-container position-relative overflow-hidden"
@@ -372,7 +370,7 @@
             </div>
           </div>
           <!-- Card 7 -->
-          <div class="col">
+          <div class="col" data-aos="fade-up" data-aos-delay="100">
             <div class="card h-100 shadow-lg border-0 rounded-4">
               <div
                 class="product-img-container position-relative overflow-hidden"
@@ -401,7 +399,7 @@
             </div>
           </div>
           <!-- Card 8 -->
-          <div class="col">
+          <div class="col" data-aos="fade-up" data-aos-delay="200">
             <div class="card h-100 shadow-lg border-0 rounded-4">
               <div
                 class="product-img-container position-relative overflow-hidden"
@@ -430,7 +428,7 @@
             </div>
           </div>
           <!-- Card 9 -->
-          <div class="col">
+          <div class="col" data-aos="fade-up" data-aos-delay="300">
             <div class="card h-100 shadow-lg border-0 rounded-4">
               <div
                 class="product-img-container position-relative overflow-hidden"
@@ -464,10 +462,10 @@
       <!-- Special Offers Section -->
       <section class="py-5">
         <div class="container">
-          <h2 class="text-center mb-4">Special Offers on Headphones</h2>
+          <h2 class="text-center mb-4" data-aos="fade-up">Special Offers on Headphones</h2>
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <!-- Headphones Offer 1 -->
-            <div class="col">
+            <div class="col" data-aos="flip-left" data-aos-delay="100">
               <div class="card h-100 shadow hover-card">
                 <div
                   class="product-img-wrapper position-relative overflow-hidden"
@@ -490,7 +488,7 @@
             </div>
 
             <!-- Headphones Offer 2 -->
-            <div class="col">
+            <div class="col" data-aos="flip-left" data-aos-delay="200">
               <div class="card h-100 shadow hover-card">
                 <div
                   class="product-img-wrapper position-relative overflow-hidden"
@@ -515,7 +513,7 @@
             </div>
 
             <!-- Headphones Offer 3 -->
-            <div class="col">
+            <div class="col" data-aos="flip-left" data-aos-delay="300">
               <div class="card h-100 shadow hover-card">
                 <div
                   class="product-img-wrapper position-relative overflow-hidden"
@@ -545,10 +543,10 @@
       <!-- Product Categories Section -->
       <section class="py-5">
         <div class="container">
-          <h2 class="text-center mb-4">Explore by Category</h2>
+          <h2 class="text-center mb-4" data-aos="fade-up">Explore by Category</h2>
           <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 g-4">
             <!-- Budget-Friendly Category -->
-            <div class="col">
+            <div class="col" data-aos="zoom-in" data-aos-delay="100">
               <div class="card h-80 shadow category-card">
                 <div
                   class="category-img-wrapper position-relative overflow-hidden"
@@ -569,7 +567,7 @@
             </div>
 
             <!-- Noise Cancelling Category -->
-            <div class="col">
+            <div class="col" data-aos="zoom-in" data-aos-delay="200">
               <div class="card h-80 shadow category-card">
                 <div
                   class="category-img-wrapper position-relative overflow-hidden"
@@ -590,7 +588,7 @@
             </div>
 
             <!-- Wireless Category -->
-            <div class="col">
+            <div class="col" data-aos="zoom-in" data-aos-delay="300">
               <div class="card h-80 shadow category-card">
                 <div
                   class="category-img-wrapper position-relative overflow-hidden"
@@ -611,7 +609,7 @@
             </div>
 
             <!-- Gaming Category -->
-            <div class="col">
+            <div class="col" data-aos="zoom-in" data-aos-delay="400">
               <div class="card h-80 shadow category-card">
                 <div
                   class="category-img-wrapper position-relative overflow-hidden"
